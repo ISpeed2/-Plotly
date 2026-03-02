@@ -50,11 +50,13 @@ fig.update_layout(
 ```
 
 ### Популярные параметры настройки
-Параметр	Описание	Пример значения
-paper_bgcolor	Цвет области вокруг графика	'white' или '#ffffff'
-plot_bgcolor	Цвет фона самой диаграммы	'rgba(0,0,0,0)'
-margin	Отступы (l, r, t, b)	dict(l=20, r=20, t=20, b=20)
-hovermode	Режим подсказок	'x', 'y', 'closest'
+
+| Параметр | Описание | Пример значения |
+| :--- | :--- | :--- |
+| `paper_bgcolor` | Цвет области вокруг графика | `'white'` или `'#ffffff'` |
+| `plot_bgcolor` | Цвет фона самой диаграммы | `'rgba(0,0,0,0)'` |
+| `margin` | Отступы (l, r, t, b) | `dict(l=20, r=20, t=20, b=20)` |
+| `hovermode` | Режим подсказок | `'x'`, `'y'`, `'closest'` |
 
 ### Цветовые шкалы
 Для графиков с градиентом можно использовать встроенные наборы:
@@ -63,4 +65,5 @@ hovermode	Режим подсказок	'x', 'y', 'closest'
 import plotly.express as px
 # Использование цветовой шкалы Viridis
 fig = px.scatter(df, x="x", y="y", color="z", color_continuous_scale=px.colors.sequential.Viridis)
+
 ```
